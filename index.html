@@ -22,7 +22,9 @@
 </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <title>Enter LYFTMOON - Lyft Promo Code - Get $50 free towards your first ride</title>
-      <script type="text/javascript">
+      <script src="dist/clipboard.min.js"></script>
+
+      <!--<script type="text/javascript">
 		  function copyToClipboard(element) {
   			var $temp = $("<input>");
   			$("body").append($temp);
@@ -30,7 +32,7 @@
   			document.execCommand("copy");
   			$temp.remove();
 		  }
-	   </script>
+	   </script> -->
      
 <div style="display:inline;">
 <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/844014624/?label=mKQLCMrC03MQoMi6kgM&amp;guid=ON&amp;script=0"/>
@@ -225,8 +227,17 @@ var google_remarketing_only = false;
                            <div id="content-c321819" class="csc-default">
                               <div class="align-center">
                                  <p class="align-center">Copy the Lyft promo code below:</p>
-                                 <div class="promo-button" id="promo">LYFTMOON</div>
-                                 <button onclick="copyToClipboard('#promo')" class="pink-button" style="margin-bottom: 10px">COPY</button>
+                                 <!--<div class="promo-button" id="promo">LYFTMOON</div>-->
+                                 <!--Clipboard copy with message START-->
+                                 <!-- Target -->
+							<div style="width: 300px; margin:0 auto;"><input class="promo-button" id="promo" value="LYFTMOON"></div>
+
+								<!-- Trigger -->
+								<button class="pink-button" data-clipboard-target="#foo" style="margin-bottom: 10px">COPY</button>
+                                 <!--Clipboard copy with message END-->
+
+                                 
+                                 <!--<button onclick="copyToClipboard('#promo')" class="pink-button" style="margin-bottom: 10px">COPY</button>-->
                               </div>
                            </div>
                            <div id="content-c321639" class="csc-default" style="margin-top: 20px">
