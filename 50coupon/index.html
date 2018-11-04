@@ -9,6 +9,27 @@
       <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0, user-scalable=0, minimal-ui">
       <meta name="theme-color" content="#ff6600" />
       <link rel="stylesheet" type="text/css" href="css/lyft.css" media="all">
+	   
+
+
+<!-- Event snippet for Redeems conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-780762576/o8TTCIvmq4wBEND7pfQC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
       <!-- Hotjar Tracking Code for www.ridecoupon.com -->
 <script>
     (function(h,o,t,j,a,r){
@@ -176,7 +197,7 @@ clipboard.on('error', function(e) {
                            </div>
                            <div id="content-c321918" class="csc-default">
                               <div class="align-center">
-                                 <a href="https://www.lyft.com/invite/CRZDEAL" target="_blank" class="pink-button">GET $50 LYFT CREDIT FOR FREE</a>
+                                 <a onclick="return gtag_report_conversion('https://www.lyft.com/invite/CRZDEAL');" href="https://www.lyft.com/invite/CRZDEAL" target="_blank" class="pink-button">GET $50 LYFT CREDIT FOR FREE</a>
 								  <div style="color: #FFFFFF; font-size: 18px; margin-top:15px">Or enter promo code <b style="font-weight: 500">CRZDEAL</b> into your Lyft app</div>
                               </div>
                            </div>
